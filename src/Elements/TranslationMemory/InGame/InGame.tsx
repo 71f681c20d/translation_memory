@@ -15,10 +15,6 @@ const InGame = () => {
   const [remainingPhrases, setRemainingPhrases] = React.useState<Phrase[]>(JSON.parse(JSON.stringify(phrases as Phrase[]))); // deep copy
   const [currentIndex, setCurrentIndex] = React.useState<number>(0);
 
-  useEffect(() => {
-    setStartTime ? setStartTime(new Date()) : console.error('Unable to set start time');
-  }, []);
-
   const [translatedInput, setTranslatedInput] = useState<string>('');
 
   const handleReveal = (event: any) => {
@@ -63,8 +59,9 @@ const InGame = () => {
 
   useEffect(() => {
     nextPhrase();
+    setStartTime ? setStartTime(new Date()) : console.error('Unable to set start time');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
 
 
   return (
@@ -94,7 +91,7 @@ const InGame = () => {
               {remainingPhrases[currentIndex]?.translation}
             </p>
             <p id="input_results">
-              Your input was: {translatedInput==remainingPhrases[currentIndex]?.translation? 'Correct': 'Incorrect'}
+              Your input was: {translatedInput===remainingPhrases[currentIndex]?.translation? 'Correct': 'Incorrect'}
             </p>
             <div>
               <button id="incorrect_button" onClick={handleIncorrect} style={{ background: "red"}}>
