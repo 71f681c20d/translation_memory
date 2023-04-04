@@ -27,7 +27,7 @@ const TranslationMemory = () => {
 
   const [currentPage, setCurrentPage] = react.useState<string>('new_game');
   const [phrases, setPhrases] = react.useState<Phrase[]>([]);
-  const [startTime, setStartTime] = react.useState<Date>();
+  const [startTime, setStartTime] = react.useState<Date>({} as Date);
   const [incorrectCount, setIncorrectCount] = react.useState<number>(0);
   
 
