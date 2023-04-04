@@ -15,6 +15,7 @@ const DocumentUploader = () => {
   };
 
   const parseCsv = (event: any) => {
+    let phrases: Phrase[] = [];
     // Passing file data (event.target.files[0]) to parse using Papa.parse
     Papa.parse(event.target.files[0], {
       header: true,
@@ -24,7 +25,7 @@ const DocumentUploader = () => {
         let filteredPhrases: Phrase[] = [];
         // filter allPhrases based on the 'included' field in the CSV; exclude if it says FALSE
         for(let phrase of allPhrases){
-          if(phrase.included as string !== 'FALSE'){
+          if(phrase.included != 'FALSE'){
             filteredPhrases.push(phrase);
           }
         }

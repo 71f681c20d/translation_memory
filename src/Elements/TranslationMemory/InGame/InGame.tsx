@@ -17,7 +17,7 @@ const InGame = () => {
 
   useEffect(() => {
     setStartTime ? setStartTime(new Date()) : console.error('Unable to set start time');
-  });
+  }, []);
 
   const [translatedInput, setTranslatedInput] = useState<string>('');
 
@@ -63,7 +63,7 @@ const InGame = () => {
 
   useEffect(() => {
     nextPhrase();
-  });
+  }, []);
 
 
 
@@ -94,7 +94,7 @@ const InGame = () => {
               {remainingPhrases[currentIndex]?.translation}
             </p>
             <p id="input_results">
-              Your input was: {translatedInput===remainingPhrases[currentIndex]?.translation? 'Correct': 'Incorrect'}
+              Your input was: {translatedInput==remainingPhrases[currentIndex]?.translation? 'Correct': 'Incorrect'}
             </p>
             <div>
               <button id="incorrect_button" onClick={handleIncorrect} style={{ background: "red"}}>
