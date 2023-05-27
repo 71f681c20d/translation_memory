@@ -1,12 +1,20 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { translationMemoryContext } from "../TranslationMemory";
 import DocumentUploader from "./DocumentUploader"
+import defaultPhraseList from "../../../Models/Default";
 
 const NewGame = () => {
 
   const translationMemoryStore = useContext(translationMemoryContext);
   const setCurrentPage = translationMemoryStore?.setCurrentPage;
+  const setPhrases = translationMemoryStore?.setPhrases;
 
+  
+
+  useEffect(() => {
+    setPhrases? setPhrases(defaultPhraseList): console.error('Unable to initialize default phrases');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const handleBegin = (event: any) => {
     console.log('Beginning game');
