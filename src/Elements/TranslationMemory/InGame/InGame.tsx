@@ -67,8 +67,8 @@ const InGame = () => {
   return (
     <>
       <div id="in_game">
-        <p id="instructions" style={{ fontSize: 20, color: "blue", textDecorationLine: "underline", fontStyle: "italic"}}>
-          Write the translation with correct spelling:
+        <p id="instructions" style={{ fontSize: 20, color: "red", fontStyle: "italic"}}>
+          Instructions: Write the translation with correct spelling, then reveal the translation to check your work.
         </p>
         <p id="english_text" style={{ fontSize: 40, color: "black", fontWeight: "bold"}}>
           {remainingPhrases[currentIndex]?.english_text}

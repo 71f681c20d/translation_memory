@@ -45,7 +45,7 @@ const TranslationMemory = () => {
     <>
       <header>
         <h1 onClick={printGameState}>
-          The Phrase Translation Memory Game
+          The Translation Memory Game
         </h1>
       </header>
       <translationMemoryContext.Provider
