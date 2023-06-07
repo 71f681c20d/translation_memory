@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { translationMemoryContext } from "../TranslationMemory";
 import DocumentUploader from "./DocumentUploader"
-import defaultPhraseList from "../../../Models/Default";
+import defaultPhraseList from "../../../Assets/Default";
 import Presets from "../Presets/Presets";
 
 const NewGame = () => {
