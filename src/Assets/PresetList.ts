@@ -57,6 +57,27 @@ const presetList: Preset[] = [
     "page": 133,
     "list": [{"english_text":"day","translation":"วัน"},{"english_text":"Monday","translation":"วันจันทร์"},{"english_text":"Tuesday","translation":"วันอังคาร"},{"english_text":"Wednesday","translation":"วันพุธ"},{"english_text":"Thursday","translation":"วันพฤหัสบดี"},{"english_text":"Friday","translation":"วันศุกร์"},{"english_text":"Saturday","translation":"วันเสาร์"},{"english_text":"Sunday","translation":"วันอาทิตย์"},{"english_text":"week","translation":"สัปดาห์"},{"english_text":"weekend","translation":"สุดสัปดาห์"},{"english_text":"today","translation":"วันนี้"},{"english_text":"tomorrow","translation":"พรุ่งนี้"},{"english_text":"the day after tomorrow","translation":"วันมะรืนนี้"},{"english_text":"yesterday","translation":"เมื่อวาน"},{"english_text":"the day before yesterday","translation":"เมื่อวานซืน"},{"english_text":"when","translation":"เมื่อไร"},{"english_text":"next (week)","translation":"(สัปดาห์) หน้า"},{"english_text":"last (week)","translation":"(สัปดาห์) ที่แล้ว"}]
   },
+  {
+    "index": 9,
+    "topic": "เดือน 12 เดือน (12 months of the year)",
+    "chapter": 8,
+    "page": 137,
+    "list": [{"english_text":"month","translation":"เดือน"},{"english_text":"this month","translation":"เดือนนี้"},{"english_text":"next month","translation":"เดือนหน้า"},{"english_text":"last month","translation":"เดือนที่แล้ว"},{"english_text":"which month?","translation":"เดือนไหน?"},{"english_text":"January","translation":"มกราคม"},{"english_text":"February","translation":"กุมภาพันธ์"},{"english_text":"March","translation":"มีนาคม"},{"english_text":"April","translation":"เมษายน"},{"english_text":"May","translation":"พฤษภาคม"},{"english_text":"June","translation":"มิถุนายน"},{"english_text":"July","translation":"กรกฎาคม"},{"english_text":"August","translation":"สิงหาคม"},{"english_text":"September","translation":"กันยายน"},{"english_text":"October","translation":"ตุลาคม"},{"english_text":"November","translation":"พฤศจิกายน"},{"english_text":"December","translation":"ธันวาคม"},{"english_text":"since","translation":"เนื่องจาก"},{"english_text":"until","translation":"จนกระทั่ง"}]
+  },
+  {
+    "index": 10,
+    "topic": "ปี พ.ศ./ค.ศ. (Year: B.E./A.D.)",
+    "chapter": 8,
+    "page": 139,
+    "list": [{"english_text":"year","translation":"ปี"},{"english_text":"B.E.","translation":"พ. ศ."},{"english_text":"A.D.","translation":"ค. ศ."},{"english_text":"to be free","translation":"ว่าง"},{"english_text":"date","translation":"วันที่"},{"english_text":"birthday","translation":"วันเกิด"}]
+  },
+  {
+    "index": 10,
+    "topic": "ปี พ.ศ./ค.ศ. (Year: B.E./A.D.)",
+    "chapter": 8,
+    "page": 139,
+    "list": [{"english_text":"at/when","translation":"ตอน"},{"english_text":"morning","translation":"เช้า"},{"english_text":"late morning","translation":"สาย"},{"english_text":"noon (mid-day)","translation":"เที่ยงวัน"},{"english_text":"afternooon","translation":"บ่าย"},{"english_text":"evening","translation":"เย็น"},{"english_text":"late evening","translation":"ค่ำ"},{"english_text":"late night","translation":"ดึก"},{"english_text":"night","translation":"กลางคืน"},{"english_text":"daytime","translation":"เวลากลางวัน"},{"english_text":"midnight","translation":"เที่ยงคืน"},{"english_text":"second","translation":"วินาที"},{"english_text":"minute","translation":"นาที"},{"english_text":"hour","translation":"ชั่วโมง"},{"english_text":"half","translation":"ครึ่ง"},{"english_text":"in___(time)","translation":"อีก____"},{"english_text":"what time?","translation":"กี่โมง?"},{"english_text":"time classifier (1-5 AM)","translation":"ตี"},{"english_text":"time classifier (7-11 AM)","translation":"ทุ่ม"}]
+  },
   // all presets above are directly from book
   {
     "topic": "Clothes",
