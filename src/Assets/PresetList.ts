@@ -72,10 +72,10 @@ const presetList: Preset[] = [
     "list": [{"english_text":"year","translation":"ปี"},{"english_text":"B.E.","translation":"พ. ศ."},{"english_text":"A.D.","translation":"ค. ศ."},{"english_text":"to be free","translation":"ว่าง"},{"english_text":"date","translation":"วันที่"},{"english_text":"birthday","translation":"วันเกิด"}]
   },
   {
-    "index": 10,
-    "topic": "ปี พ.ศ./ค.ศ. (Year: B.E./A.D.)",
+    "index": 11,
+    "topic": "เวลา",
     "chapter": 8,
-    "page": 139,
+    "page": 144,
     "list": [{"english_text":"at/when","translation":"ตอน"},{"english_text":"morning","translation":"เช้า"},{"english_text":"late morning","translation":"สาย"},{"english_text":"noon (mid-day)","translation":"เที่ยงวัน"},{"english_text":"afternooon","translation":"บ่าย"},{"english_text":"evening","translation":"เย็น"},{"english_text":"late evening","translation":"ค่ำ"},{"english_text":"late night","translation":"ดึก"},{"english_text":"night","translation":"กลางคืน"},{"english_text":"daytime","translation":"เวลากลางวัน"},{"english_text":"midnight","translation":"เที่ยงคืน"},{"english_text":"second","translation":"วินาที"},{"english_text":"minute","translation":"นาที"},{"english_text":"hour","translation":"ชั่วโมง"},{"english_text":"half","translation":"ครึ่ง"},{"english_text":"in___(time)","translation":"อีก____"},{"english_text":"what time?","translation":"กี่โมง?"},{"english_text":"time classifier (1-5 AM)","translation":"ตี"},{"english_text":"time classifier (7-11 AM)","translation":"ทุ่ม"}]
   },
   // all presets above are directly from book
