@@ -73,21 +73,28 @@ const presetList: Preset[] = [
   },
   {
     "index": 11,
-    "topic": "เวลา",
+    "topic": "เวลา (Time)",
     "chapter": 8,
     "page": 144,
     "list": [{"english_text":"at/when","translation":"ตอน"},{"english_text":"morning","translation":"เช้า"},{"english_text":"late morning","translation":"สาย"},{"english_text":"noon (mid-day)","translation":"เที่ยงวัน"},{"english_text":"afternooon","translation":"บ่าย"},{"english_text":"evening","translation":"เย็น"},{"english_text":"late evening","translation":"ค่ำ"},{"english_text":"late night","translation":"ดึก"},{"english_text":"night","translation":"กลางคืน"},{"english_text":"daytime","translation":"เวลากลางวัน"},{"english_text":"midnight","translation":"เที่ยงคืน"},{"english_text":"second","translation":"วินาที"},{"english_text":"minute","translation":"นาที"},{"english_text":"hour","translation":"ชั่วโมง"},{"english_text":"half","translation":"ครึ่ง"},{"english_text":"in___(time)","translation":"อีก____"},{"english_text":"what time?","translation":"กี่โมง?"},{"english_text":"time classifier (1-5 AM)","translation":"ตี"},{"english_text":"time classifier (7-11 AM)","translation":"ทุ่ม"}]
   },
+  {
+    "index": 12,
+    "topic": "กิจวัตร (Daily Routine)",
+    "chapter": 8,
+    "page": 150,
+    "list": [{"english_text":"to wake up","translation":"ตื่นนอน"},{"english_text":"to bathe","translation":"ไปอาบน้ำ"},{"english_text":"to brush your teeth","translation":"เพื่อแปรงฟัน"},{"english_text":"to eat","translation":"กินข้าว"},{"english_text":"to get dressed","translation":"เพื่อแต่งตัว"},{"english_text":"to read a book","translation":"เพื่ออ่านหนังสือ"},{"english_text":"to study","translation":"เรียน"},{"english_text":"to rest","translation":"พักผ่อน"},{"english_text":"to go shopping","translation":"ไปซื้อของ"},{"english_text":"to travel","translation":"เที่ยว"},{"english_text":"to go to the movies","translation":"ไปดูหนัง"},{"english_text":"to listen to music","translation":"ฟังเพลง"},{"english_text":"to play an instrument","translation":"เล่นดนตรี"},{"english_text":"to play sports","translation":"เพื่อเล่นกีฬา"},{"english_text":"then","translation":"แล้วก็"}]
+  },
   // all presets above are directly from book
   {
     "topic": "Clothes",
-    "chapter": 5,
+    "chapter": 7,
     "page": 115,
     "list": [{"english_text":"shirt","translation":"เสื้อ"},{"english_text":"socks","translation":"ถุงเท้า"},{"english_text":"hat","translation":"หมวก"},{"english_text":"pants","translation":"กางเกง"},{"english_text":"shoes","translation":"รองเท้า"},{"english_text":"jacket","translation":"เสื้อแจ็กเกต"},{"english_text":"panties","translation":"กางเกง"},{"english_text":"underwear","translation":"ชุดชั้นใน"},{"english_text":"glasses","translation":"แว่นตา"},{"english_text":"mask","translation":"หน้ากาก"},{"english_text":"uniform","translation":"เครื่องแบบ"},{"english_text":"sandals","translation":"รองเท้าแตะ"},{"english_text":"bra","translation":"บรา"}]
   },
   {
     "topic": "Colors",
-    "chapter": 4,
+    "chapter": 7,
     "page": 122,
     "list": [{"english_text":"black","translation":"สีดำ"},{"english_text":"grey","translation":"สีเทา"},{"english_text":"white","translation":"สีขาว"},{"english_text":"pink","translation":"สีชมพู"},{"english_text":"red","translation":"สีแดง"},{"english_text":"orange","translation":"ส้ม"},{"english_text":"yellow","translation":"สีเหลือง"},{"english_text":"green","translation":"สีเขียว"},{"english_text":"light blue","translation":"สีฟ้า"},{"english_text":"dark blue","translation":"น้ำเงิน"},{"english_text":"purple","translation":"สีม่วง"},{"english_text":"brown","translation":"สีน้ำตาล"},{"english_text":"silver","translation":"เงิน"},{"english_text":"gold","translation":"ทอง"}]
   },
