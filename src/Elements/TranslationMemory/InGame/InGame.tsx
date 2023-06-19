@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import Phrase from "../../../Models/Phrase";
 import { translationMemoryContext } from "../TranslationMemory";
-import PlayAudio from "./PlayAudio/PlayAudio";
+// import PlayAudio from "./PlayAudio/PlayAudio";
 
 export type GameState = {
   currentPhrase?: Phrase, 
@@ -109,7 +109,7 @@ const InGame = () => {
             <p id="translated_text" style={{ fontSize: 45, color: "black", fontWeight: "bold"}}>
               {currentPhrase?.translation}
             </p>
-            <PlayAudio/>
+            {/* <PlayAudio/> */}
             <p id="input_results">
               Your input was: {translatedInput===currentPhrase?.translation? 'Correct': 'Incorrect'}
             </p>
