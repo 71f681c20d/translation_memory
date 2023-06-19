@@ -42,7 +42,9 @@ const PlayAudio = () => {
 
   return (
     <div>
-      <button onClick={handleSpeechGeneration}>Generate Speech</button>
+      {!audioSrc &&
+        <button onClick={handleSpeechGeneration}>Generate Speech</button>
+      }
       {audioSrc && (
         <audio controls>
           <source src={audioSrc} type="audio/mpeg" />

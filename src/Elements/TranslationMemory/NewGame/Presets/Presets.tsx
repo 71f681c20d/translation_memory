@@ -28,7 +28,6 @@ const Presets = () => {
         <table style={{margin: '0 auto', border: '1px solid #000', borderCollapse: 'collapse', marginTop: '4px'}}>
           <thead>
             <tr>
-              <th>Index</th>
               <th>Topic</th>
               <th>Chapter</th>
               <th>Page</th>
@@ -38,7 +37,6 @@ const Presets = () => {
           <tbody id="preset_table_body" style={{border: '1px solid #000', padding: '4px'}}>
             {presetList.map((entry) => (
               <tr key={entry.index}>
-                <td>{entry.index}</td>
                 <td>{entry.topic}</td>
                 <td>{entry.chapter}</td>
                 <td>{entry.page}</td>

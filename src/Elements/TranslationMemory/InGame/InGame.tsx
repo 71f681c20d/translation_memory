@@ -86,7 +86,9 @@ const InGame = () => {
         <p id="instructions" style={{ fontSize: 20, color: "red", fontStyle: "italic"}}>
           Instructions: Write the translation with correct spelling, then reveal the translation to check your work.
         </p>
-        <p id="topic">Topic: ____</p>
+        {currentPhrase?.topic &&
+          <p id="topic">Topic: ____</p>
+        }
         <p id="english_text" style={{ fontSize: 40, color: "black", fontWeight: "bold"}}>
           {remainingPhrases[currentIndex]?.english_text}
         </p>
@@ -105,11 +107,11 @@ const InGame = () => {
         {reveal &&
           <div id="revealable_component">
             <p id="translated_text" style={{ fontSize: 45, color: "black", fontWeight: "bold"}}>
-              {remainingPhrases[currentIndex]?.translation}
+              {currentPhrase?.translation}
             </p>
             <PlayAudio/>
             <p id="input_results">
-              Your input was: {translatedInput===remainingPhrases[currentIndex]?.translation? 'Correct': 'Incorrect'}
+              Your input was: {translatedInput===currentPhrase?.translation? 'Correct': 'Incorrect'}
             </p>
             <div>
               <button id="incorrect_button" onClick={handleIncorrect} style={{ background: "red"}}>

@@ -5,4 +5,5 @@ export default interface Phrase
   translation: string,
   included?: string,
   correct?: boolean,
+  topic?: string,
 }
