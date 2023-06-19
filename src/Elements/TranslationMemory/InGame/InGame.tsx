@@ -1,6 +1,14 @@
 import React, { useContext, useEffect, useState } from "react";
 import Phrase from "../../../Models/Phrase";
 import { translationMemoryContext } from "../TranslationMemory";
+import PlayAudio from "./PlayAudio/PlayAudio";
+
+export type GameState = {
+  currentPhrase?: Phrase, 
+  setCurrentPhrase?: Function,
+}
+
+export const inGameContext = React.createContext<GameState>({});
 
 const InGame = () => {
 
@@ -14,8 +22,11 @@ const InGame = () => {
   const [reveal, setReveal] = React.useState<Boolean>(false);
   const [remainingPhrases, setRemainingPhrases] = React.useState<Phrase[]>(JSON.parse(JSON.stringify(phrases as Phrase[]))); // deep copy
   const [currentIndex, setCurrentIndex] = React.useState<number>(0);
+  const [currentPhrase, setCurrentPhrase] = React.useState<Phrase>();
 
   const [translatedInput, setTranslatedInput] = useState<string>('');
+
+  
 
   const handleReveal = (event: any) => {
     console.log('Revealing translation');
@@ -48,8 +59,9 @@ const InGame = () => {
     }
     // Randomly select a new index for the phrase array
     const index = Math.floor(Math.random() * remainingPhrases.length);
-    console.log('index: ' + index)
     setCurrentIndex(index);
+    setCurrentPhrase(remainingPhrases[currentIndex]);
+    console.log('current: ' + currentPhrase);
     setReveal(false);
   }
 
@@ -67,9 +79,14 @@ const InGame = () => {
   return (
     <>
       <div id="in_game">
+      <inGameContext.Provider
+        value={{
+          currentPhrase, setCurrentPhrase,
+        }}>
         <p id="instructions" style={{ fontSize: 20, color: "red", fontStyle: "italic"}}>
           Instructions: Write the translation with correct spelling, then reveal the translation to check your work.
         </p>
+        <p id="topic">Topic: ____</p>
         <p id="english_text" style={{ fontSize: 40, color: "black", fontWeight: "bold"}}>
           {remainingPhrases[currentIndex]?.english_text}
         </p>
@@ -90,6 +107,7 @@ const InGame = () => {
             <p id="translated_text" style={{ fontSize: 45, color: "black", fontWeight: "bold"}}>
               {remainingPhrases[currentIndex]?.translation}
             </p>
+            <PlayAudio/>
             <p id="input_results">
               Your input was: {translatedInput===remainingPhrases[currentIndex]?.translation? 'Correct': 'Incorrect'}
             </p>
@@ -103,6 +121,7 @@ const InGame = () => {
             </div>
           </div>
         }
+        </inGameContext.Provider>
       </div>
     </>
   )

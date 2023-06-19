@@ -4,10 +4,10 @@
  */
 
 import { useContext } from "react";
-import { translationMemoryContext } from "../TranslationMemory";
-import defaultPhraseList from "../../../Assets/Default";
-import Preset from "../../../Models/Preset";
-import presetList from "../../../Assets/PresetList";
+import { translationMemoryContext } from "../../TranslationMemory";
+import defaultPhraseList from "../../../../Assets/Default";
+import Preset from "../../../../Models/Preset";
+import presetList from "../../../../Assets/PresetList";
 
 const Presets = () => {
 
