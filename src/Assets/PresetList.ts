@@ -85,6 +85,25 @@ const presetList: Preset[] = [
     "page": 150,
     "list": [{"english_text":"to wake up","translation":"ตื่นนอน"},{"english_text":"to bathe","translation":"ไปอาบน้ำ"},{"english_text":"to brush your teeth","translation":"เพื่อแปรงฟัน"},{"english_text":"to eat","translation":"กินข้าว"},{"english_text":"to get dressed","translation":"เพื่อแต่งตัว"},{"english_text":"to read a book","translation":"เพื่ออ่านหนังสือ"},{"english_text":"to study","translation":"เรียน"},{"english_text":"to rest","translation":"พักผ่อน"},{"english_text":"to go shopping","translation":"ไปซื้อของ"},{"english_text":"to travel","translation":"เที่ยว"},{"english_text":"to go to the movies","translation":"ไปดูหนัง"},{"english_text":"to listen to music","translation":"ฟังเพลง"},{"english_text":"to play an instrument","translation":"เล่นดนตรี"},{"english_text":"to play sports","translation":"เพื่อเล่นกีฬา"},{"english_text":"then","translation":"แล้วก็"}]
   },
+  {
+    "index": 13,
+    "topic": "การบอกที่ตั้งและทิศทาง (Locations and Directions)",
+    "chapter": 9,
+    "page": 162,
+    "list": [{"english_text":"direction","translation":"ทิศทาง"},{"english_text":"on","translation":"บน"},{"english_text":"lower","translation":"ล่าง"},{"english_text":"front","translation":"หน้า"},{"english_text":"behind","translation":"หลัง"},{"english_text":"left","translation":"ซ้าย"},{"english_text":"right","translation":"ขวา"},{"english_text":"in","translation":"ใน"},{"english_text":"out","translation":"นอก"},{"english_text":"under","translation":"ใต้"},{"english_text":"side","translation":"ข้าง/ด้าน"},{"english_text":"to see","translation":"เห็น"},{"english_text":"to look for","translation":"หา"},{"english_text":"classroom","translation":"ห้องเรียน"},{"english_text":"box","translation":"กล่อง"}]
+  },
+  {
+    "topic": "คำศัพท์ (Places)",
+    "chapter": 9,
+    "page": 170,
+    "list": [{"english_text":"university","translation":"มหาวิทยาลัย"},{"english_text":"house","translation":"บ้าน"},{"english_text":"market","translation":"ตลาด"},{"english_text":"zoo","translation":"สวนสัตว์"},{"english_text":"restaurant","translation":"ร้านอาหาร"},{"english_text":"department store or mall","translation":"ห้างสรรพสินค้า"},{"english_text":"hospital","translation":"โรงพยาบาล"},{"english_text":"hotel","translation":"โรงแรม"},{"english_text":"police station","translation":"สถานีตำรวจ"},{"english_text":"train station","translation":"สถานีรถไฟ"},{"english_text":"airport","translation":"สนามบิน"},{"english_text":"stadium","translation":"สนามกีฬา"},{"english_text":"to go ","translation":"ไป"},{"english_text":"to come","translation":"มา"},{"english_text":"near","translation":"ใกล้"},{"english_text":"far","translation":"ไกล"},{"english_text":"opposite","translation":"ตรงข้าม"},{"english_text":"between","translation":"ระหว่าง"},{"english_text":"nearby","translation":"แถวนี้"},{"english_text":"here","translation":"ที่นี่"},{"english_text":"to walk","translation":"เดิน"},{"english_text":"to arrive","translation":"ถึง"}]
+  },
+  {
+    "topic": "คำศัพท์ (Places; Extra Vocabulary)",
+    "chapter": 9,
+    "page": 176,
+    "list": [{"english_text":"bank","translation":"ธนาคาร"},{"english_text":"post office","translation":"ไปรษณีย์"},{"english_text":"bus station","translation":"สถานีขนส่ง"},{"english_text":"cinema","translation":"โรงหนัง"},{"english_text":"factory","translation":"โรงงาน"},{"english_text":"library","translation":"ห้องสมุด"},{"english_text":"swimming pool","translation":"สระว่ายน้ำ"},{"english_text":"bookstore","translation":"ร้านหนังสือ"},{"english_text":"laundry","translation":"ซักรีด"},{"english_text":"gas station","translation":"ปั้มน้ำมัน"},{"english_text":"embassy","translation":"สถานทูต"},{"english_text":"consulate","translation":"สถานกงสุล"},{"english_text":"immigration office","translation":"สำนักงานตรวจคนเข้าเมือง"}]
+  },
   // all presets above are directly from book
   {
     "topic": "Clothes",
